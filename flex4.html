@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX4</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        nav, main, aside, footer{
+            border: 1px solid black;
+        }
+        body{
+            height: calc(100vh - 8px);
+            display: flex;
+            gap: 4px;
+            flex-direction: column;
+            padding: 4px;
+    }
+    nav{
+        display: flex;
+        gap: 4px;
+      padding: 2px;
+       justify-content: space-between;
+       flex-direction: row;
+    }
+     .navcont{
+      display: flex;
+    }
+    .title{
+        display:flex;
+        align-items: center;
+        margin: 2px;
+    }
+    .redbox{
+        background-color: red;
+        width: 30px;
+        height: 30px;
+    }
+    .navcont2{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+    }
+    .bluebox{
+        background-color: blue;
+        width: 5vw;
+        height: 4vh;
+    }
+        .MAcont{
+            display: flex;
+            gap: 4px;
+            flex-grow: 1;
+        }
+        main{
+            flex-grow: 1;
+            
+        }
+        .parentbox{
+            display: flex;
+            gap: 200px;
+            
+
+        }
+        .title1{
+            display: flex;
+            margin: 1px;
+
+        }
+        main{
+            justify-items: center;
+           
+            padding: 4px;
+            
+        }
+        .mainbox1{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            align-items: center;
+            margin: 1px;
+           
+        }
+        .babybox1{
+            border: 1px solid black;
+            height: 20vh;
+            width: 27vw;
+        }
+        .mainbox2{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            align-items: center;
+           
+            
+        }
+        .babybox2{
+            border: 1px solid black;
+            height: 20vh;
+            width: 27vw;
+        }
+        .title2{
+            display: flex;
+        }
+        .side1{
+        border: 1px solid black;
+        width: 15vw;
+        height: 5vh;
+      }
+      .sidebox{
+        padding: 4px;
+        gap: 4px;
+        display: flex;
+        flex-direction: column;
+      }
+      footer{
+        display: flex;
+        gap: 2px;
+        padding: 2px;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+      .parentfoot{
+        display: flex;
+        
+      }
+      .box{
+        background-color: red;
+        width: 30px;
+        height: 30px;
+      }
+      .title2{
+        margin: 2px;
+        display: flex;
+        align-items: center;
+      }
+      .secfoot{
+        background-color: black;
+        width: 1340px;
+        height: 1px;
+        margin: 4px;
+      }
+      .foot3{
+        background-color: red;
+        width: 20px;
+        height: 20px;
+      }
+      .thirdfoot{
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        padding: 2px;
+      }
+    .footlast{
+        display: flex;
+        justify-content: center;
+    }
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navcont">
+            <div class="redbox"></div>
+            <div class="title">FLEXBOX</div>
+        </div>
+        <div class="navcont2">
+            <div class="bluebox"></div>
+            <div class="bluebox"></div>
+        </div>   
+    </nav>
+    <div class="MAcont">
+        <main>
+            <div class="parentbox">
+                <div class="mainbox1">
+                    <div class="title1">Main Box 1</div>
+                    <div class="babybox1"></div>
+                </div>
+                <div class="mainbox2">
+                    <div class="title2">Main Box 1</div>
+                    <div class="babybox2"></div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="sidebox">
+                <div class="side1"></div>
+                <div class="side1"></div>
+                <div class="side1"></div>
+                <div class="side1"></div>
+                <div class="side1"></div>
+                <div class="side1"></div>
+                <div class="side1"></div>
+                <div class="side1"></div>
+                <div class="side1"></div>
+                <div class="side1"></div>
+            </div>
+        </aside>
+    </div>
+   
+    <footer>
+        <div class="parentfoot">
+            <div class="box"></div>
+            <div class="title2">FLEXBOX</div>
+        </div>
+        <div class="secfoot"></div>
+    
+        <div class="thirdfoot">
+            <div class="foot3"></div>
+            <div class="foot3"></div>
+            <div class="foot3"></div>
+            <div class="foot3"></div>
+            <div class="foot3"></div>
+        </div>
+      
+        <div class="footlast">©Copyright All rights reserved</div>
+    </div>
+    </footer>
+</body>
+</html>
